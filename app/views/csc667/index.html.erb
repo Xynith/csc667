@@ -1,0 +1,22 @@
+<html>
+	<h1>Victor Tam</h1>
+
+	<table>
+		<tr>
+			<th><b>Project Name</b></th>
+			<th><b>Description</b></th>
+			<th><b>URL</b></th>
+		</tr>
+	
+	<% number = 0 %> 
+	<% PROJECTS.each do |project, descript, url| %>
+		<tr>
+			<td><%= project %></td>
+			<td><%= descript['description'] %></td>
+			<td><%= link_to descript['url'], controller => "project#{number}", :action => "project#{number}"%></td>
+			<% number += 1 %>
+		</tr>
+	<% end %>
+
+	</table>
+</html>	
