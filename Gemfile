@@ -34,7 +34,7 @@ group :doc do
 end
 
 # Bootstrap
-gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap-sass'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
