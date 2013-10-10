@@ -1,5 +1,29 @@
 @import "bootstrap";
 
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section{
+  overflow: auto;
+}
+
+textarea{
+  resize: vertical;
+}
+
+.center{
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
 // Place all the styles related to the CSC667 controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
