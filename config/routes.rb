@@ -1,8 +1,5 @@
-
-
 Blog::Application.routes.draw do
-  root to: "csc667#index"
-  #get "csc667/index"
+  get "csc667/index"
   get "csc667/project0"
   get "csc667/project1"
   get "csc667/project2"
@@ -10,7 +7,7 @@ Blog::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-
+  root to: "csc667#index"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
