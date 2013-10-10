@@ -5,5 +5,5 @@ project_1:
   url: "/"
   description: "Custom Home Page Route"
 project_2:
-  url: "/"
+  url: "/pages/project_2"
   description: "Description of Bootstrap Setup"  
