@@ -1,0 +1,29 @@
+html {
+  overflow-y: scroll;
+  background-color: red;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section{
+  overflow: auto;
+}
+
+textarea{
+  resize: vertical;
+}
+
+.center{
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
