@@ -4,7 +4,7 @@ ruby '1.9.3'
 
 gem 'rails', '4.0.0'
 
-group :development do
+group :test do
   gem 'sqlite3', '1.3.8'
 end
 
@@ -27,7 +27,7 @@ end
 #gem 'rails', '4.0.0'
 
 # Use pg as the database for Active Record
-#gem 'pg'
+gem 'pg'
 
 # Use SCSS for stylesheets
 #gem 'sass-rails', '~> 4.0.0'
