@@ -6,4 +6,7 @@ project_1:
   description: "Custom Home Page Route"
 project_2:
   url: "/pages/project_2"
-  description: "Description of Bootstrap Setup"  
+  description: "Description of Bootstrap Setup" 
+project_3:
+  url: "/calendar"
+  description: "A basic interactive calendar (non-persistent)"
