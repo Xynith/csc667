@@ -9,10 +9,10 @@ group :development do
 end
 
 gem 'bootstrap-sass', '2.3.2.0'
-gem 'sass-rails', '4.0.0'
+gem 'sass-rails'
 gem 'uglifier', '2.1.1'
-gem 'coffee-rails', '4.0.0'
-gem 'jquery-rails', '3.0.4'
+gem 'coffee-rails'
+gem 'jquery-rails', '~> 3.0.4'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 
