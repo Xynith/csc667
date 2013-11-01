@@ -10,4 +10,7 @@ class Csc667Controller < ApplicationController
   
   def project2
   end
+  
+  def project3
+  end
 end
