@@ -27,6 +27,18 @@ function add_info(){
 		var text = document.createTextNode('  -' + String(strTime) + ': ' + String(strDescript));
 		entry.appendChild(text);
 		entry.appendChild(document.createElement("br"));
+
+		$.ajax({
+			type: "POST",
+			contentType: "application/json",
+			url : "/appointments",
+			data: JSON.stringify({"appointment": {"month": monthNum, "year": yearNum, "date": currentDate.getDate(), "time": strTime, "desc": strDescript}}),	
+			dataType : "json"
+			//success: function () 
+            //    { alert('success') },
+			//error: function (err)
+			//	{ alert(err.responseText)}
+		});
 		document.getElementById("time").selectedIndex = 0;
 		document.getElementById("descript").value = "";
 	}
@@ -125,13 +137,20 @@ function fill_calendar(month,month_length)
      todaysDay=i
   }
   calendarString += '</TR></TABLE><BR>'
+  
   var object = document.getElementById('calendar');
   object.innerHTML = calendarString;
-
+  
+  $.getJSON("/appointments", function(data){
+	   for(var i = 0; i < data.length; i++){
+		  if(data[i].year == yearNum && data[i].month == monthNum){
+		 	$("#" + data[i].date).append(" " + data[i].time + ': ' + data[i].desc + "<br>");
+		  }
+		}
+	});
 }
 
 // end hiding -->
 
 get_days(monthName[monthNum - 1]);
 fill_table(monthName[monthNum - 1],numDays)
-

@@ -69,3 +69,5 @@ gem 'pg'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "json", "~> 1.8.1"
